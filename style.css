@@ -408,3 +408,18 @@ filter:none;
     box-shadow:0 0 35px rgba(138,112,255,.28);
 
 }
+
+#player-pseudo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 56px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.08em;
+    margin-top: 10px;
+    margin-bottom: 35px;
+
+    background: linear-gradient(180deg, #ffffff 40%, #b78cff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 20px rgba(183, 140, 255, 0.3));
+}

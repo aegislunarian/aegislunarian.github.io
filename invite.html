@@ -37,7 +37,7 @@
 
         <h1>Invitation.</h1>
 
-        <h2>Vous avez été invités.</h2>
+        <h2 id="player-pseudo">~ Bienvenue ~</h2>
 
         <div class="divider">
 
@@ -58,7 +58,7 @@
             Préparez-vous à entrer dans le Continuum.
         </p>
 
-        <button onclick="location.href='index.html'">
+        <button onclick="location.href='index'">
             Téléchargement du modpack
         </button>
 
@@ -73,6 +73,18 @@
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const pseudo = urlParams.get('id');
+
+    if (pseudo) {
+        const pseudoElement = document.getElementById("player-pseudo");
+        if (pseudoElement) {
+            pseudoElement.textContent = `~ ${pseudo} ~`;
+        }
+    }
+</script>
 
 </body>
 

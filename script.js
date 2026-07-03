@@ -85,7 +85,7 @@ button.addEventListener("click", () => {
 
         button.textContent = "Ouverture de l'installation...";
 
-        window.location.href = "setup.html";
+        window.location.href = "setup";
 
     }, 1200);
 
