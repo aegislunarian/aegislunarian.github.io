@@ -242,3 +242,169 @@ filter:none;
     color:#b58cff;
 
 }
+
+.success{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+}
+
+.card{
+
+    width:min(760px,100%);
+
+    text-align:center;
+
+    padding:70px 60px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:26px;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 25px 80px rgba(0,0,0,.45);
+
+}
+
+.check{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    font-size:42px;
+
+    color:#95f2b6;
+
+    background:rgba(149,242,182,.08);
+
+    border:1px solid rgba(149,242,182,.35);
+
+    box-shadow:0 0 45px rgba(149,242,182,.15);
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    margin-bottom:28px;
+
+    padding:10px 24px;
+
+    border-radius:999px;
+
+    background:rgba(130,95,255,.08);
+
+    border:1px solid rgba(130,95,255,.22);
+
+    color:#b8a9ff;
+
+    font-size:12px;
+
+    letter-spacing:.25em;
+
+    text-transform:uppercase;
+
+}
+
+.card h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:74px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.card h2{
+
+    font-weight:300;
+
+    font-size:30px;
+
+    color:#ececec;
+
+    margin-bottom:38px;
+
+}
+
+.card p{
+
+    max-width:560px;
+
+    margin:0 auto 20px;
+
+    color:#b8bfcd;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+.card .small{
+
+    color:#8d95a8;
+
+    font-size:15px;
+
+    margin-bottom:45px;
+
+}
+
+.card button{
+
+    cursor:pointer;
+
+    padding:16px 42px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(138,112,255,.3);
+
+    background:rgba(138,112,255,.08);
+
+    color:white;
+
+    font-size:15px;
+
+    transition:.35s;
+
+}
+
+.card button:hover{
+
+    transform:translateY(-3px);
+
+    background:rgba(138,112,255,.18);
+
+    box-shadow:0 0 35px rgba(138,112,255,.28);
+
+}
