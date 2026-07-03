@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#07080d;
+overflow:hidden;
+
+color:white;
+
+font-family:Inter,sans-serif;
+
+}
+
+canvas{
+
+position:fixed;
+inset:0;
+z-index:-2;
+
+}
+
+.overlay{
+
+position:fixed;
+inset:0;
+
+background:
+
+radial-gradient(circle at center,
+rgba(130,95,255,.15),
+transparent 40%),
+
+linear-gradient(to bottom,
+rgba(0,0,0,.15),
+rgba(0,0,0,.6));
+
+z-index:-1;
+
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
+}
+
+.title{
+
+display:flex;
+flex-direction:column;
+
+align-items:center;
+
+animation:intro 2s ease;
+
+user-select:none;
+
+}
+
+.top{
+
+font-size:22px;
+
+letter-spacing:1em;
+
+margin-bottom:15px;
+
+opacity:.75;
+
+}
+
+h1{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:92px;
+
+font-weight:600;
+
+letter-spacing:.10em;
+
+line-height:.9;
+
+text-shadow:
+
+0 0 40px rgba(130,95,255,.12);
+
+}
+
+.divider{
+
+display:flex;
+
+align-items:center;
+
+gap:22px;
+
+width:620px;
+
+max-width:80vw;
+
+margin:28px 0 14px;
+
+}
+
+.divider span{
+
+flex:1;
+
+height:1px;
+
+background:
+
+linear-gradient(to right,
+transparent,
+rgba(255,255,255,.18),
+transparent);
+
+}
+
+.diamond{
+
+width:12px;
+height:12px;
+
+transform:rotate(45deg);
+
+border:1px solid #b78cff;
+
+box-shadow:
+
+0 0 16px rgba(144,111,255,.5);
+
+}
+
+.title p{
+
+letter-spacing:.1em;
+
+font-size:15px;
+
+opacity:.65;
+
+}
+
+button{
+
+margin-top:90px;
+
+background:none;
+
+color:white;
+
+padding:16px 40px;
+
+border-radius:40px;
+
+border:1px solid rgba(255,255,255,.12);
+
+font-size:13px;
+
+letter-spacing:.35em;
+
+text-transform:uppercase;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+button:hover{
+
+transform:translateY(-3px);
+
+border-color:#9b7cff;
+
+box-shadow:
+
+0 0 25px rgba(140,110,255,.35);
+
+}
+
+@keyframes intro{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+filter:blur(12px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+filter:none;
+
+}
+
+}
+
+.credits{
+
+    position:fixed;
+
+    bottom:34px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:12px;
+
+    letter-spacing:.22em;
+
+    color:rgba(255,255,255,.35);
+
+    text-transform:uppercase;
+
+}
+
+.credits span{
+
+    color:#b58cff;
+
+}
