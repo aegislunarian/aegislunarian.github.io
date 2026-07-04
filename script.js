@@ -66,27 +66,31 @@ function render(){
 
 render();
 
-const button = document.getElementById("download");
+const buttonMain = document.getElementById("download");
+buttonMain.addEventListener("click", () => {
+    handleDownload(buttonMain, "TheContinuum.mrpack");
+});
 
-button.addEventListener("click", () => {
+const buttonLow = document.getElementById("download-low");
+buttonLow.addEventListener("click", () => {
+    handleDownload(buttonLow, "TheContinuum-LowPC.mrpack"); 
+});
 
-    button.disabled = true;
-    button.textContent = "Téléchargement...";
+function handleDownload(btnElement, fileName) {
+    btnElement.disabled = true;
+    const originalText = btnElement.textContent;
+    btnElement.textContent = "Téléchargement...";
 
     const link = document.createElement("a");
-    link.href = "TheContinuum.mrpack";
-    link.download = "TheContinuum.mrpack";
+    link.href = fileName;
+    link.download = fileName;
 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 
     setTimeout(() => {
-
-        button.textContent = "Ouverture de l'installation...";
-
+        btnElement.textContent = "Ouverture de l'installation...";
         window.location.href = "setup";
-
     }, 1200);
-
-});
+}
