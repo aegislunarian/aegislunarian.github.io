@@ -409,16 +409,12 @@ filter:none;
 
 }
 
-/* Style spécifique pour le bouton secondaire */
 button.btn-modeste {
-    /* Supprime la grosse marge du bouton principal */
     margin-top: 0; 
     
-    /* Positionnement précis sous le premier bouton sans pousser le layout */
     position: absolute;
-    transform: translateY(200px); /* Ajustez cette valeur pour le rapprocher ou l'éloigner */
+    transform: translateY(200px); 
 
-    /* Design discret et minimaliste */
     border: none;
     font-size: 11px;
     letter-spacing: .25em;
@@ -427,9 +423,9 @@ button.btn-modeste {
     box-shadow: none;
 }
 
-/* Comportement au survol */
+
 button.btn-modeste:hover {
-    transform: translateY(197px); /* Léger effet de survol parallèlement au premier */
+    transform: translateY(197px); 
     opacity: 0.8;
     background: rgba(255, 255, 255, 0.03);
     box-shadow: none;
