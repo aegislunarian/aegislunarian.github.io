@@ -68,12 +68,12 @@ render();
 
 const buttonMain = document.getElementById("download");
 buttonMain.addEventListener("click", () => {
-    handleDownload(buttonMain, "TheContinuum.mrpack");
+    handleDownload(buttonMain, "The Continuum - Client Side.mrpack");
 });
 
 const buttonLow = document.getElementById("download-low");
 buttonLow.addEventListener("click", () => {
-    handleDownload(buttonLow, "TheContinuum-LowPC.mrpack"); 
+    handleDownload(buttonLow, "The Continuum - Client Side LITE.mrpack"); 
 });
 
 function handleDownload(btnElement, fileName) {
